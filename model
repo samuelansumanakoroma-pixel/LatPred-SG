@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+
+# Sample latency prediction model
+
+def predict_latency(traffic_load, queue_delay):
+    latency = (traffic_load * 3.5) + queue_delay
+    return latency
+
+sample_prediction = predict_latency(0.75, 3.2)
+
+print("Predicted Latency:", sample_prediction)
