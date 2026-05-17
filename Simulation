@@ -1,5 +1,15 @@
-simulation
-data_preprocessing
-model
-evaluation
-dataset
+NS-3 Smart Grid Simulation
+
+This folder contains representative smart grid communication simulation configurations used to generate communication traffic samples for latency analysis.
+
+The simulation environment models HAN–NAN–WAN smart grid communication architecture under periodic and burst traffic conditions.
+
+Representative parameters include:
+
+- Packet size: 64–512 bytes
+- Communication delay: 1–5 ms
+- Traffic type: periodic and event-driven
+- Queue model: DropTail
+- Routing approach: adaptive communication routing
+
+The generated traffic traces were used for transformer-based latency prediction experiments.
