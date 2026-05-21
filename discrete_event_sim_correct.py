@@ -1,6 +1,9 @@
-
+"""
 Discrete-event simulation for smart grid communication (G/D/1 queue, strict priority)
-Validates Network Calculus PBOO bound. Author: Koroma Samuel Ansumana
+Validates Network Calculus PBOO bound.
+Author: Koroma Samuel Ansumana
+Thesis: LatPred-SG (Latency Prediction for Smart Grid)
+"""
 
 import heapq
 import numpy as np
@@ -152,3 +155,4 @@ if __name__ == "__main__":
     print(f"Simulated min delay:      {min_delay:.2f} ms")
     print(f"Jitter (max - min):       {jitter:.2f} ms")
     assert max_delay <= bound + 0.1, "Simulation exceeded bound - check parameters"
+
